@@ -1,0 +1,9 @@
+const express = require("express");
+const bodyParser = require("body-parser");
+const morgan = require("morgan");
+const mongoose = require("mongoose");
+const routes = require("./routes");
+const app = express();
+const PORT = process.env.PORT || 3001;
+const session = require("express-session");
+const passport = require("./config/passport");
