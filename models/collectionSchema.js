@@ -9,8 +9,8 @@ const collectionSchema = new Schema({
     item_quantity: { type: Number, required: null },
     item_picture: { type: String, required: null },
     item_manufacturer: { type: String, required: true },
-    item_value: { type: Number, required: null },
-    item_condition: { type: String, required: null },
+    item_retail: { type: Number, required: null },
+    item_condition: { type: String, required: true },
     createdAt: { type: Date, default: Date.now },
     updatedAt: { type: Date, default: Date.now }
 });
